@@ -6,7 +6,7 @@ const { Title } = Typography
 
 interface Props {}
 
-function Index(_props: Props): ReactElement {
+function CvPage(_props: Props): ReactElement {
   return (
     <MainLayout>
       <Title level={4}>Nice to meet you!</Title>
@@ -14,4 +14,4 @@ function Index(_props: Props): ReactElement {
   )
 }
 
-export default Index
+export default CvPage

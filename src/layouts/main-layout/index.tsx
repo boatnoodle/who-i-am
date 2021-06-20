@@ -1,16 +1,13 @@
 import React from "react"
 import { Layout } from "antd"
-import GlobalStyle from "../../theme/globalStyles"
+import GlobalStyle from "theme/globalStyles"
 import styled from "styled-components"
+import { LeftMenu } from "./components/LeftMenu"
 
-const { Footer, Sider, Content } = Layout
+const { Content } = Layout
 
-const SiderStyled = styled(Sider)`
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #27282b;
-  height: 100vh;
+const LayoutContent = styled(Layout)`
+  padding: 20px;
 `
 
 export const MainLayout: React.FC = ({ children }) => {
@@ -18,11 +15,10 @@ export const MainLayout: React.FC = ({ children }) => {
     <div>
       <GlobalStyle />
       <Layout>
-        <SiderStyled></SiderStyled>
-        <Layout>
+        <LeftMenu />
+        <LayoutContent>
           <Content>{children}</Content>
-          <Footer>Footer</Footer>
-        </Layout>
+        </LayoutContent>
       </Layout>
     </div>
   )
