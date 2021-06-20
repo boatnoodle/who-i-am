@@ -8,6 +8,7 @@ const { Content } = Layout
 
 const LayoutContent = styled(Layout)`
   padding: 20px;
+  background: #f1f1f1;
 `
 
 export const MainLayout: React.FC = ({ children }) => {

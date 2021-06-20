@@ -47,7 +47,7 @@ export const LeftMenu: React.FC = () => {
           <Space size={`small`} direction="vertical">
             <Row justify="center">
               <Col>
-                <Avatar size={100} src="/images/my-image.jpg" />
+                <Avatar size={100} src="images/my-image.jpg" />
               </Col>
             </Row>
             <Row justify="center">
