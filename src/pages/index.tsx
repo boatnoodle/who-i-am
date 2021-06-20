@@ -1,5 +1,4 @@
 import React, { ReactElement, useState } from "react"
-import styled from "styled-components"
 import { Button } from "antd"
 import { MainLayout } from "layouts/main-layout"
 
