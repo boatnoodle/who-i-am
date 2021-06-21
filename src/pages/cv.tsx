@@ -77,7 +77,7 @@ function CvPage(_props: Props): ReactElement {
                 Revhere
               </a>{" "}
               <Avatar
-                src="images/revhere-logo.png"
+                src="images/icons/revhere.png"
                 alt="revhere-logo"
                 size={20}
               />
@@ -91,12 +91,12 @@ function CvPage(_props: Props): ReactElement {
             <div>
               <Avatar
                 shape="square"
-                src="images/next-js.svg"
+                src="images/icons/next-js.svg"
                 size={20}
                 alt="next-js"
               />
-              <Avatar src="images/graphql.svg" size={20} alt="graphql" />
-              <Avatar src="images/ant-design.svg" size={20} alt="antd" />
+              <Avatar src="images/icons/graphql.svg" size={20} alt="graphql" />
+              <Avatar src="images/icons/ant-design.svg" size={20} alt="antd" />
             </div>
           </Col>
           <Col>
@@ -108,7 +108,7 @@ function CvPage(_props: Props): ReactElement {
               >
                 Streetfood
               </a>{" "}
-              <Avatar src="images/github.svg" alt="github" size={20} />
+              <Avatar src="images/icons/github.svg" alt="github" size={20} />
             </div>
             <div>
               <TextSm>
@@ -118,13 +118,17 @@ function CvPage(_props: Props): ReactElement {
             <div>
               <Avatar
                 shape="square"
-                src="images/react.svg"
+                src="images/icons/react.svg"
                 size={20}
                 alt="next-js"
               />
-              <Avatar src="images/firebase.png" size={20} alt="firebase" />
               <Avatar
-                src="images/material-ui.png"
+                src="images/icons/firebase.png"
+                size={20}
+                alt="firebase"
+              />
+              <Avatar
+                src="images/icons/material-ui.png"
                 size={20}
                 alt="material-ui"
               />
@@ -139,7 +143,7 @@ function CvPage(_props: Props): ReactElement {
               >
                 Covid workout daily
               </a>{" "}
-              <Avatar src="images/github.svg" alt="github" size={20} />
+              <Avatar src="images/icons/github.svg" alt="github" size={20} />
             </div>
             <div>
               <TextSm>
@@ -150,12 +154,16 @@ function CvPage(_props: Props): ReactElement {
             <div>
               <Avatar
                 shape="square"
-                src="images/react.svg"
+                src="images/icons/react.svg"
                 size={20}
                 alt="react"
               />
-              <Avatar src="images/firebase.png" size={20} alt="firebase" />
-              <Avatar src="images/ant-design.svg" size={20} alt="antd" />
+              <Avatar
+                src="images/icons/firebase.png"
+                size={20}
+                alt="firebase"
+              />
+              <Avatar src="images/icons/ant-design.svg" size={20} alt="antd" />
             </div>
           </Col>
         </Row>
@@ -173,31 +181,31 @@ function CvPage(_props: Props): ReactElement {
           <div>
             <Row justify="space-around" align="bottom">
               <Col>
-                <img src="images/react.svg" width={40} height={40} />
+                <img src="images/icons/react.svg" width={40} height={40} />
                 <Text>React</Text>
               </Col>
               <Col>
-                <img src="images/next-js.svg" width={40} height={40} />
+                <img src="images/icons/next-js.svg" width={40} height={40} />
                 <Text>Next JS</Text>
               </Col>
               <Col>
-                <img src="images/ts.png" width={40} height={40} />
+                <img src="images/icons/typescript.png" width={40} height={40} />
                 <Text>Typescript</Text>
               </Col>
               <Col>
-                <img src="images/apollo.svg" width={40} height={40} />
+                <img src="images/icons/apollo.svg" width={40} height={40} />
                 <Text>Apollo client</Text>
               </Col>
               <Col>
-                <img src="images/graphql.svg" width={40} height={40} />
+                <img src="images/icons/graphql.svg" width={40} height={40} />
                 <Text>Graphql</Text>
               </Col>
               <Col>
-                <img src="images/nestjs.svg" width={40} height={40} />
+                <img src="images/icons/nest-js.png" width={40} height={40} />
                 <Text>Nest JS</Text>
               </Col>
               <Col>
-                <img src="images/mongodb.svg" width={40} height={40} />
+                <img src="images/icons/mongodb.svg" width={40} height={40} />
                 <Text>Mongodb</Text>
               </Col>
             </Row>
@@ -205,23 +213,31 @@ function CvPage(_props: Props): ReactElement {
           <div>
             <Row justify="space-around" align="bottom">
               <Col>
-                <img src="images/firebase.png" width={40} height={40} />
+                <img src="images/icons/firebase.png" width={40} height={40} />
                 <Text>Firebase</Text>
               </Col>
               <Col>
-                <img src="images/github-actions.svg" width={40} height={40} />
+                <img
+                  src="images/icons/github-actions.svg"
+                  width={40}
+                  height={40}
+                />
                 <Text>Github Action</Text>
               </Col>
               <Col>
-                <img src="images/docker.png" width={40} height={40} />
+                <img src="images/icons/docker.png" width={40} height={40} />
                 <Text>Docker</Text>
               </Col>
               <Col>
-                <img src="images/do-icon.png" width={40} height={40} />
+                <img
+                  src="images/icons/digitalocean.svg"
+                  width={40}
+                  height={40}
+                />
                 <Text>Digital ocean</Text>
               </Col>
               <Col>
-                <img src="images/netlify.png" width={40} height={40} />
+                <img src="images/icons/netlify.svg" width={40} height={40} />
                 <Text>Netlify</Text>
               </Col>
             </Row>
