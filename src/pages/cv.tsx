@@ -28,8 +28,11 @@ const TextSm = styled(Text)`
 `
 
 const CarouselStyled = styled(Carousel)`
-  & .ant-carousel .slick-dots-bottom {
+  .ant-carousel .slick-dots {
     bottom: -40px !important;
+  }
+  .ant-carousel .slick-dots li button {
+    background: #000000;
   }
 `
 
@@ -60,12 +63,12 @@ function CvPage(_props: Props): ReactElement {
           </Col>
         </Row>
       </Wrapper>
-      <Row justify="center">
+      <Row justify="center" style={{ marginBottom: "32px" }}>
         <Col>
           <Title level={5}>Portfolio</Title>
         </Col>
       </Row>
-      <WhiteBox>
+      <WhiteBox style={{ marginBottom: "32px" }}>
         <Row justify="space-between">
           <Col>
             <div>
@@ -168,7 +171,7 @@ function CvPage(_props: Props): ReactElement {
           </Col>
         </Row>
       </WhiteBox>
-      <Row justify="center" style={{ marginBottom: "24px" }}>
+      <Row justify="center" style={{ marginBottom: "32px" }}>
         <Col>
           <Text>
             My Skills, I usaually use the Next JS with graphql for frontend. And
@@ -176,7 +179,7 @@ function CvPage(_props: Props): ReactElement {
           </Text>
         </Col>
       </Row>
-      <div style={{ marginBottom: "32px" }}>
+      <div style={{ marginBottom: "60px" }}>
         <CarouselStyled autoplay>
           <div>
             <Row justify="space-around" align="bottom">
@@ -249,17 +252,69 @@ function CvPage(_props: Props): ReactElement {
           <Title level={5}>Work experiences</Title>
         </Col>
       </Row>
-      <WhiteBox>
-        <Timeline>
-          <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
-          <Timeline.Item>
-            Solve initial network problems 2015-09-01
-          </Timeline.Item>
-          <Timeline.Item>Technical testing 2015-09-01</Timeline.Item>
-          <Timeline.Item>
-            Network problems being solved 2015-09-01
-          </Timeline.Item>
-        </Timeline>
+      <WhiteBox style={{ marginBottom: "32px" }}>
+        <Row justify="center">
+          <Col>
+            <Timeline>
+              <Timeline.Item color="green">
+                <Row align="middle" gutter={16}>
+                  <Col>
+                    <img src="images/icons/fm.svg" width={40} height={40} />
+                  </Col>
+                  <Col>
+                    <Title level={5}>FullStack Developer</Title>
+                  </Col>{" "}
+                  <Col>
+                    <Text>Future makers - Full-time</Text>
+                  </Col>
+                  <Col>
+                    <Text type="success">Jan 2020 - Present</Text>
+                  </Col>
+                </Row>
+              </Timeline.Item>
+              <Timeline.Item>
+                <Row align="middle" gutter={16}>
+                  <Col>
+                    <img
+                      src="images/icons/eventpop.jpeg"
+                      width={40}
+                      height={40}
+                    />
+                  </Col>
+                  <Col>
+                    <Title level={5}>Web developer</Title>
+                  </Col>
+                  <Col>
+                    <Text>Eventpop - Full-time</Text>
+                  </Col>
+                  <Col>
+                    <Text type="secondary">Aug 2019 - Dec20219</Text>
+                  </Col>
+                </Row>
+              </Timeline.Item>
+              <Timeline.Item style={{ padding: 0 }}>
+                <Row align="middle" gutter={16}>
+                  <Col>
+                    <img
+                      src="images/icons/blueseas.png"
+                      width={40}
+                      height={40}
+                    />
+                  </Col>
+                  <Col>
+                    <Title level={5}>Frontend Developer</Title>
+                  </Col>
+                  <Col>
+                    <Text>Blueseas enterpise Co., Ltd. - Full-time</Text>
+                  </Col>
+                  <Col>
+                    <Text type="secondary">Jul 2018 - Jul 2019</Text>
+                  </Col>
+                </Row>
+              </Timeline.Item>
+            </Timeline>
+          </Col>
+        </Row>
       </WhiteBox>
     </MainLayout>
   )
