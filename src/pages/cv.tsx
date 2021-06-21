@@ -262,13 +262,15 @@ function CvPage(_props: Props): ReactElement {
                     <img src="images/icons/fm.svg" width={40} height={40} />
                   </Col>
                   <Col>
-                    <Title level={5}>FullStack Developer</Title>
+                    <Text style={{ color: "#97266d" }}>
+                      FullStack Developer
+                    </Text>
                   </Col>{" "}
                   <Col>
                     <Text>Future makers - Full-time</Text>
                   </Col>
                   <Col>
-                    <Text type="success">Jan 2020 - Present</Text>
+                    <TextSm type="success">Jan 2020 - Present</TextSm>
                   </Col>
                 </Row>
               </Timeline.Item>
@@ -282,13 +284,13 @@ function CvPage(_props: Props): ReactElement {
                     />
                   </Col>
                   <Col>
-                    <Title level={5}>Web developer</Title>
+                    <Text style={{ color: "#97266d" }}>Web developer</Text>
                   </Col>
                   <Col>
                     <Text>Eventpop - Full-time</Text>
                   </Col>
                   <Col>
-                    <Text type="secondary">Aug 2019 - Dec20219</Text>
+                    <TextSm type="secondary">Aug 2019 - Dec20219</TextSm>
                   </Col>
                 </Row>
               </Timeline.Item>
@@ -302,13 +304,13 @@ function CvPage(_props: Props): ReactElement {
                     />
                   </Col>
                   <Col>
-                    <Title level={5}>Frontend Developer</Title>
+                    <Text style={{ color: "#97266d" }}>Frontend Developer</Text>
                   </Col>
                   <Col>
                     <Text>Blueseas enterpise Co., Ltd. - Full-time</Text>
                   </Col>
                   <Col>
-                    <Text type="secondary">Jul 2018 - Jul 2019</Text>
+                    <TextSm type="secondary">Jul 2018 - Jul 2019</TextSm>
                   </Col>
                 </Row>
               </Timeline.Item>
