@@ -127,17 +127,6 @@ function CvPage(_props: Props): ReactElement {
               <Avatar src="images/icons/ant-design.svg" size={20} alt="antd" />
             </div>
           </Col>
-          {/* <Col>
-            <div>
-              <a
-                href="https://goaboatnoodle.netlify.app/"
-                target="_blank"
-                style={{ color: "#97266d" }}
-              >
-                Streetfood
-              </a>{" "}
-            </div>
-          </Col> */}
           <Col>
             <div>
               <a
@@ -146,8 +135,8 @@ function CvPage(_props: Props): ReactElement {
                 style={{ color: "#97266d" }}
               >
                 Streetfood
-                <Avatar src="images/icons/github.svg" alt="github" size={20} />
               </a>{" "}
+              <Avatar src="images/icons/github.svg" alt="github" size={20} />
             </div>
             <div>
               <a
