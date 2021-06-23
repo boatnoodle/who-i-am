@@ -11,12 +11,16 @@ const LayoutContent = styled(Layout)`
   background: #f1f1f1;
 `
 
-export const MainLayout: React.FC = ({ children }) => {
+interface Props {
+  onClickPrintCV: () => void
+}
+
+export const MainLayout: React.FC<Props> = ({ children, onClickPrintCV }) => {
   return (
     <div>
       <GlobalStyle />
       <Layout>
-        <LeftMenu />
+        <LeftMenu onClickPrintCV={onClickPrintCV} />
         <LayoutContent>
           <Content>{children}</Content>
         </LayoutContent>

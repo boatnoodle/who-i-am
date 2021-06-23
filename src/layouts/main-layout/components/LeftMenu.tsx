@@ -14,6 +14,7 @@ import {
   MailOutlined,
   FacebookOutlined,
   GithubOutlined,
+  PrinterOutlined,
 } from "@ant-design/icons"
 import styled from "styled-components"
 import { Link } from "gatsby"
@@ -38,7 +39,11 @@ const WrapperMenuLeft = styled.div`
   row-gap: 12px;
 `
 
-export const LeftMenu: React.FC = () => {
+interface Props {
+  onClickPrintCV: () => void
+}
+
+export const LeftMenu: React.FC<Props> = ({ onClickPrintCV }) => {
   return (
     <SiderStyled>
       <Row justify="center">
@@ -96,13 +101,17 @@ export const LeftMenu: React.FC = () => {
         </Col>
       </Row>
       <WrapperMenuLeft>
-        {/* <Row>
-          <Col>
-            <Link to="/" type="link" style={{ color: "white" }}>
-              CV
-            </Link>
+        <Row>
+          <Col span={24}>
+            <Button
+              style={{ width: "100%" }}
+              onClick={onClickPrintCV}
+              icon={<PrinterOutlined />}
+            >
+              Print CV
+            </Button>
           </Col>
-        </Row> */}
+        </Row>
         {/* <Row>
           <Col>
             <Link to="/blog" type="link" style={{ color: "white" }}>
