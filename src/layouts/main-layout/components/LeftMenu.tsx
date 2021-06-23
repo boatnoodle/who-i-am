@@ -25,7 +25,6 @@ const SiderStyled = styled(Sider)`
   flex: 0 0 20% !important;
   max-width: unset !important;
   background: #27282b;
-  height: 100vh;
   padding: 20px 0;
 
   a {
@@ -97,20 +96,20 @@ export const LeftMenu: React.FC = () => {
         </Col>
       </Row>
       <WrapperMenuLeft>
-        <Row>
+        {/* <Row>
           <Col>
-            <Link to="/cv" type="link" style={{ color: "white" }}>
+            <Link to="/" type="link" style={{ color: "white" }}>
               CV
             </Link>
           </Col>
-        </Row>
-        <Row>
+        </Row> */}
+        {/* <Row>
           <Col>
             <Link to="/blog" type="link" style={{ color: "white" }}>
               Blog
             </Link>
           </Col>
-        </Row>
+        </Row> */}
       </WrapperMenuLeft>
     </SiderStyled>
   )
